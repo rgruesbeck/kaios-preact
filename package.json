@@ -1,0 +1,30 @@
+{
+  "name": "kaios-preact",
+  "version": "1.0.0",
+  "description": "A blank Koji template for kaios with parcel bundler and preact",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "koji-vcc watch &",
+    "start": "npx parcel index.html",
+    "build": "npx parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "Koji",
+    "KaiOS",
+    "Preact",
+    "Parcel"
+  ],
+  "author": "gron",
+  "license": "ISC",
+  "dependencies": {
+    "@withkoji/vcc": "^1.0.8",
+    "app": "^0.1.0",
+    "parcel-bundler": "^1.12.3",
+    "preact": "^8.5.2"
+  }
+}
