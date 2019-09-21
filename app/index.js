@@ -1,18 +1,15 @@
 import { h, Component } from 'preact';
-// import GameContainer from './GameContainer';
+// import a from './components/a';
 
 export default class App extends Component {
 	componentDidMount() {
-		this.state = {
-			name: 'name'
-		};
+		this.state = {}
 	}
 
 	render() {
+		let { name } = this.props.config.settings
 		return (
-			<div>
-				Hello Kai
-			</div>
+			<div>{name}</div>
 		)
 	}
 }
