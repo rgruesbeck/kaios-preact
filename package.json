@@ -21,10 +21,22 @@
   ],
   "author": "gron",
   "license": "ISC",
+  "babel": {
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ]
+  },
   "dependencies": {
     "@withkoji/vcc": "^1.0.8",
-    "app": "^0.1.0",
-    "parcel-bundler": "^1.12.3",
-    "preact": "^8.5.2"
+    "nanoanimation": "^2.1.0",
+    "preact": "^8.5.2",
+    "prop-types": "^15.7.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "parcel-bundler": "^1.12.3"
   }
 }

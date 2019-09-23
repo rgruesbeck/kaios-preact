@@ -1,15 +1,19 @@
 import { h, Component } from 'preact';
-// import a from './components/a';
+import Banner from './components/banner';
 
 export default class App extends Component {
+	state = {}
+
 	componentDidMount() {
-		this.state = {}
+		console.log('component mounted')
 	}
 
 	render() {
 		let { name } = this.props.config.settings
 		return (
-			<div>{name}</div>
+			<div>
+				<Banner text={name}/>
+			</div>
 		)
 	}
 }
