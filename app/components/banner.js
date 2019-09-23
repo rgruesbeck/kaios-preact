@@ -7,6 +7,8 @@ class Banner extends Component {
     };
 
 	handleClick() {
+        this.setState({ clicked: this.state.clicked + 1 })
+
 		// example animation
 		hover(this.node, () => {
 			console.log('done hovering', this.node)
